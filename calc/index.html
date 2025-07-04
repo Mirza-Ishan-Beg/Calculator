@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Simple Calculator</title>
-    </head>
-    <body>
-        <div "first">
-            <div "Name">
-                <label>  Enter Your Name  </label>
-            </div>
-            <div "Input">
-                <input type="text" id="username">
-            </div>
-        </div>
-        <div "Stuff">
-            <input type="text" id="equation" readonly>
-            <div "buttons-row-1">
-                <button onclick="input_stream('+')"> + </button>
-                <button onclick="input_stream('-')"> - </button>
-                <button onclick="input_stream('*')"> x </button>
-                <button onclick="input_stream('/')"> / </button>
-            </div>
-            <div "buttons-row-2">
-                <button onclick="input_stream('1')"> 1 </button>
-                <button onclick="input_stream('2')"> 2 </button>
-                <button onclick="input_stream('3')"> 3 </button>
-                <button onclick="input_stream('4')"> 4 </button>
-            </div>
-            <div "buttons-row-3">
-                <button onclick="input_stream('5')"> 5 </button>
-                <button onclick="input_stream('6')"> 6 </button>
-                <button onclick="input_stream('7')"> 7 </button>
-                <button onclick="input_stream('8')"> 8 </button>
-            </div>
-            <div "buttons-row-4">
-                <button onclick="input_stream('9')"> 9 </button>
-                <button onclick="input_stream('0')"> 0 </button>
-                <button onclick="input_stream('**')"> ^ </button>
-                <button onclick="clear_input()"> C </button>
-            </div>
-            <div "calculate">
-                <button onclick="calculate()"> Calculate </button>
-            </div>
-        </div>
-        <script src="calc-basic-logic.js"></script>
-    </body>
-</html>
+<head>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="first">
+    <div class="name">
+      <label>Enter Your Name</label>
+    </div>
+    <div class="input">
+      <input type="text" id="username">
+    </div>
+  </div>
 
+  <div class="stuff">
+    <input type="text" id="equation" readonly>
+
+    <div class="buttons-row">
+      <button onclick="input_stream('+')">+</button>
+      <button onclick="input_stream('-')">-</button>
+      <button onclick="input_stream('*')">x</button>
+      <button onclick="input_stream('/')">/</button>
+    </div>
+
+    <div class="buttons-row">
+      <button onclick="input_stream('1')">1</button>
+      <button onclick="input_stream('2')">2</button>
+      <button onclick="input_stream('3')">3</button>
+      <button onclick="input_stream('4')">4</button>
+    </div>
+
+    <div class="buttons-row">
+      <button onclick="input_stream('5')">5</button>
+      <button onclick="input_stream('6')">6</button>
+      <button onclick="input_stream('7')">7</button>
+      <button onclick="input_stream('8')">8</button>
+    </div>
+
+    <div class="buttons-row">
+      <button onclick="input_stream('9')">9</button>
+      <button onclick="input_stream('0')">0</button>
+      <button onclick="input_stream('**')">^</button>
+      <button onclick="clear_input()">C</button>
+    </div>
+
+    <div class="calculate">
+      <button onclick="calculate()">Calculate</button>
+    </div>
+  </div>
+
+  <script src="calc-basic-logic.js"></script>
+</body>
+</html>
