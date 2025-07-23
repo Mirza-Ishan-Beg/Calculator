@@ -1,0 +1,71 @@
+/* style.css */
+
+body {
+  font-family: Arial;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.first 
+{
+  margin-bottom: 20px;
+}
+
+.name label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input input {
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.stuff {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+/*   for visibility i am using rgba */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#equation {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.buttons-row {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  width: 50px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.calculate button {
+  background-color: #28a745;
+  width: 220px;
+}
+
+.calculate button:hover {
+  background-color: #218838;
+}
